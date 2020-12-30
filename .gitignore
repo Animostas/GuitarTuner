@@ -1,5 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# This file is automatically created by adding Typescript to create-react-app
+# It seems like it's not necessary https://github.com/facebook/create-react-app/issues/6560
+src/react-app-env.d.ts
+
+# https://stackoverflow.com/questions/65079558/how-to-delete-eslintcache-file-in-react recommends
+# adding this unneeded file to .gitignore
+.eslintcache
+
 # dependencies
 /node_modules
 /.pnp
