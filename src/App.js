@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Peg from './Components/Peg/Peg.js';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Peg/>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -18,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+
     </div>
   );
 }
