@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Peg from './Components/Peg/Peg.js';
 
 
@@ -7,21 +8,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Peg/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <ButtonGroup vertical>
+          <Peg/>
+          <Peg/>
+          <Peg/>
+        </ButtonGroup>
 
+        <ButtonGroup vertical>
+          <Peg/>
+          <Peg/>
+          <Peg/>
+        </ButtonGroup>
+      </header>
     </div>
   );
 }

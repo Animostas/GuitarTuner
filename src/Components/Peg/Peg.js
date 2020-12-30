@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from 'react-bootstrap/Button';
 import './Peg.css';
 
 class Peg extends Component {
@@ -11,7 +12,7 @@ class Peg extends Component {
   }
 
   handleClick() {
-    window.alert('Strum!');
+    window.alert('Yeah!');
     this.setState(state => ({
       isToggleOn: !state.isToggleOn
     }));
@@ -19,9 +20,9 @@ class Peg extends Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? 'ON' : 'OFF'}
-      </button>
+        <Button onClick={this.handleClick}>
+            {this.state.isToggleOn ? 'ON' : 'OFF'}
+        </Button>
     );
   }
 }
